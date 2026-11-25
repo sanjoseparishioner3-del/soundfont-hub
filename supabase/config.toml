@@ -1,0 +1,20 @@
+project_id = "soundfont-hub"
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/**"]
+enable_signup = true
+minimum_password_length = 10
+
+[auth.email]
+enable_confirmations = true
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+[functions.download-url]
+verify_jwt = true
+
+[functions.r2-upload]
+verify_jwt = true

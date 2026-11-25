@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /library
+Disallow: /checkout
+Disallow: /account
+Sitemap: https://soundfonthub.pages.dev/sitemap.xml
